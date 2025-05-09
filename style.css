@@ -1,0 +1,123 @@
+/* Estilo geral */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f8ff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Inputs e botões */
+.input-group, .radio-group {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos dentro do grupo */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"], button {
+    padding: 12px 15px;
+    margin: 5px 0;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto dentro dos inputs */
+}
+
+input[type="number"] {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="number"], button {
+        font-size: 14px;
+    }
+
+    #resultado {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="number"], button {
+        font-size: 12px;
+    }
+
+    #resultado {
+        font-size: 14px;
+    }
+}
